@@ -1,0 +1,31 @@
+/* =============================================================================
+   TOKENS.CSS
+   Variables du design system — identiques à celles de l'application React
+   Importé en premier pour être disponible dans tous les autres fichiers CSS
+   ============================================================================= */
+
+:root {
+  /* ── Couleurs ────────────────────────────────────────────────────────────── */
+  --color-bg: #f8f7f5; /* Fond principal */
+  --color-surface: #ffffff; /* Surfaces élevées (cartes, navbar) */
+  --color-border: #e0ddd8; /* Bordures légères */
+  --color-border-strong: #c4c1bb; /* Bordures au survol */
+  --color-text: #161614; /* Texte principal */
+  --color-text-muted: #5a5855; /* Texte secondaire */
+  --color-text-subtle: #a09d99; /* Texte tertiaire */
+
+  /* ── Typographie ─────────────────────────────────────────────────────────── */
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* ── Layout ──────────────────────────────────────────────────────────────── */
+  --navbar-height: 64px;
+  --max-width: 1080px;
+
+  /* ── Bordures arrondies ──────────────────────────────────────────────────── */
+  --radius: 6px;
+  --radius-lg: 12px;
+
+  /* ── Transitions ─────────────────────────────────────────────────────────── */
+  --transition: 0.18s ease;
+}

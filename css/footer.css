@@ -1,0 +1,40 @@
+/* =============================================================================
+   FOOTER.CSS
+   Pied de page — logo, copyright et liens de navigation
+   ============================================================================= */
+
+.footer {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: var(--color-text-subtle);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.footer-nav a {
+  font-size: 0.75rem;
+  color: var(--color-text-subtle);
+  transition: color var(--transition);
+}
+
+.footer-nav a:hover {
+  color: var(--color-text-muted);
+}

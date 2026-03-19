@@ -1,0 +1,65 @@
+/* =============================================================================
+   FEATURES.CSS
+   Section des 3 fonctionnalités — grille de cartes avec image
+   ============================================================================= */
+
+#features {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* En-tête — titre à gauche, description à droite */
+.features-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg);
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.feature-card:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature-card-body {
+  padding: 1.5rem;
+}
+
+.feature-card-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.feature-card-body p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}

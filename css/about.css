@@ -1,0 +1,191 @@
+/* =============================================================================
+   ABOUT.CSS
+   Section À propos — histoire du projet + équipe + lien GitHub
+   ============================================================================= */
+
+/* Layout deux colonnes */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+/* ── Colonne gauche — histoire ───────────────────────────────────────────── */
+
+.about-story p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.about-story p:last-child {
+  margin-bottom: 0;
+}
+
+.about-story a {
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity var(--transition);
+}
+
+.about-story a:hover {
+  opacity: 0.6;
+}
+
+/* ── Colonne droite — équipe + repo ──────────────────────────────────────── */
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about-team-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.85rem;
+}
+
+/* Liste des membres avec séparateurs */
+.team-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-surface);
+  transition: background var(--transition);
+}
+
+.team-member:not(:last-child) {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.team-member:hover {
+  background: var(--color-bg);
+}
+
+/* Avatar circulaire avec initiale */
+.team-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-text);
+  color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.team-info {
+  flex: 1;
+}
+
+.team-info strong {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  display: block;
+}
+
+.team-info span {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.team-socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.team-socials a {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+  letter-spacing: 0.03em;
+}
+
+.team-socials a:hover {
+  color: var(--color-text);
+  border-color: var(--color-text);
+}
+
+/* Lien vers le dépôt GitHub */
+.repo-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  transition: border-color var(--transition);
+  text-decoration: none;
+}
+
+.repo-link:hover {
+  border-color: var(--color-text);
+}
+
+.repo-link-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+/* Carré noir avec icône GitHub SVG */
+.repo-link-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius);
+  background: var(--color-text);
+  color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.repo-link-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.repo-link-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  display: block;
+}
+
+.repo-link-sub {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.repo-link-arrow {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}

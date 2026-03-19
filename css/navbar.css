@@ -1,0 +1,62 @@
+/* =============================================================================
+   NAVBAR.CSS
+   Barre de navigation fixe en haut de page
+   ============================================================================= */
+
+.navbar {
+  position: fixed;
+  inset: 0 0 auto;
+  height: var(--navbar-height);
+  background: rgba(248, 247, 245, 0.88);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 50;
+}
+
+.navbar-brand {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 0.2rem;
+  list-style: none;
+}
+
+.navbar-links a {
+  font-size: 0.83rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  padding: 0.38rem 0.7rem;
+  border-radius: var(--radius);
+  transition: color var(--transition);
+}
+
+.navbar-links a:hover {
+  color: var(--color-text);
+}
+
+.navbar-cta {
+  font-family: var(--font-body);
+  font-size: 0.83rem;
+  font-weight: 500;
+  color: var(--color-bg);
+  background: var(--color-text);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: opacity var(--transition);
+  text-decoration: none;
+}
+
+.navbar-cta:hover {
+  opacity: 0.85;
+}
